@@ -15,3 +15,9 @@ jobs:
 
       - name: Build and Test
         run: echo "Build and test steps go here"
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@releases/v4
+        with:
+          branch: gh-pages
+          folder: ./dist
